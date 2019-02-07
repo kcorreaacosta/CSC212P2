@@ -67,11 +67,8 @@ public class FishGame {
 		
 		// TODO(lab) Make the snail!
 		
-		public Snail insertsnailRandomly() {
-			Rock r = new Rock(this);
-			insertRandomly(r);
-			return r;
-		}
+		world.insertSnailRandomly();
+	
 		// Make the player out of the 0th fish color.
 		player = new Fish(0, world);
 		// Start the player at "home".
