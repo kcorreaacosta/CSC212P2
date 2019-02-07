@@ -58,13 +58,20 @@ public class FishGame {
 		home = world.insertFishHome();
 		
 		// TODO(lab) Generate some more rocks!
+		
+		
 		// TODO(lab) Make 5 into a constant, so it's easier to find & change.
-		for (int i=0; i<5; i++) {
+		for (int i=0; i<10; i++) {
 			world.insertRockRandomly();
 		}
 		
 		// TODO(lab) Make the snail!
 		
+		public Snail insertsnailRandomly() {
+			Rock r = new Rock(this);
+			insertRandomly(r);
+			return r;
+		}
 		// Make the player out of the 0th fish color.
 		player = new Fish(0, world);
 		// Start the player at "home".

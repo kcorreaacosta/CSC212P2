@@ -18,8 +18,10 @@ public class Fish extends WorldObject {
 	public static Color[] COLORS = {
 			Color.red,
 			Color.green,
-			Color.yellow
+			Color.yellow,
 			// TODO: (lab) Add more colors.
+			Color.pink,
+			Color.cyan,
 			// TODO: (P2) Maybe make a special fish that is more points?
 	};
 	/**
